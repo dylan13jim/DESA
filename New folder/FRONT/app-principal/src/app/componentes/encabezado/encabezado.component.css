@@ -1,0 +1,38 @@
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(
+        145deg,
+        rgba(0, 43, 7, 0),    /* verde oscuro */
+        rgba(0, 56, 25, 0.5),    /* rojo semitransparente */
+        rgba(0, 43, 19, 0.856)     /* azul semitransparente */
+    );
+    color: white;
+}
+  
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+  
+.acciones button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0033226e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+.acciones button:hover {
+    background-color: #003326b9;
+}
+  
+.logo img {
+    width: 350px;
+    height: 60px;
+    object-fit: contain; /* para que la imagen no se deforme */
+}
+  
