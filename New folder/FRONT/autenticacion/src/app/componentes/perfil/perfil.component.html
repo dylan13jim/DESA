@@ -1,0 +1,11 @@
+<div class="perfil-container" *ngIf="usuario">
+    <h2>Perfil del Usuario</h2>
+    <p><strong>Nombre:</strong> {{ usuario.name }}</p>
+    <p><strong>Email:</strong> {{ usuario.email }}</p>
+    <p><strong>Rol:</strong> {{ usuario.role }}</p>
+  
+    <button (click)="logout()">Cerrar sesión</button>
+  </div>
+  
+<p *ngIf="error" style="color: red">{{ error }}</p>
+  

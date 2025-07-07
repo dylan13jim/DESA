@@ -1,0 +1,17 @@
+<div class="login-container">
+    <h2>Iniciar Sesión</h2>
+  
+    <form (ngSubmit)="login()">
+        <label>Ultimatix:</label>
+        <input type="text" [(ngModel)]="user_ultimatix" name="ultimatix" required>
+    
+        <label>Contraseña:</label>
+        <input type="password" [(ngModel)]="user_password" name="password" required>
+    
+        <button type="submit">Ingresar</button>
+    </form>
+  
+    <p *ngIf="mensaje" style="color: green">{{ mensaje }}</p>
+    <p *ngIf="error" style="color: red">{{ error }}</p>
+</div>
+  
